@@ -1,0 +1,11 @@
+<div class="float-right">
+	<select class="btn btn-lg" onchange="window.location=this.value">
+		<option selected="" disabled="">Change level</option>
+		<option value="{{ "/stories" | prepend: site.baseurl }}/{{page.language}}/level1">Level 1</option>
+		<option value="{{ "/stories" | prepend: site.baseurl }}/{{page.language}}/level2">Level 2</option>
+		<option value="{{ "/stories" | prepend: site.baseurl }}/{{page.language}}/level3">Level 3</option>
+		<option value="{{ "/stories" | prepend: site.baseurl }}/{{page.language}}/level4">Level 4</option>
+		<option value="{{ "/stories" | prepend: site.baseurl }}/{{page.language}}/level5">Level 5</option>
+		<option value="{{ "/stories" | prepend: site.baseurl }}/{{page.language}}">All levels</option>
+	</select>
+</div>

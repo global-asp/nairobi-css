@@ -1,0 +1,24 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Nairobi CSS # Change this to your site title
+email: [EMAIL]
+description: > # this means to ignore newlines until "baseurl:"
+  Nairobi CSS is a responsive framework for building multilingual literacy sites.
+baseurl: "/nairobi" # the subpath of your site, e.g. /blog
+url: "https://global-asp.github.io/" # the base hostname & protocol for your site
+
+lang1: English # Change this to the default primary language of your site
+lang2: Spanish # Change this to the default secondary language of your site
+lang1_code: en # Change this to the ISO code for the primary language
+lang2_code: es # Change this to the ISO code for the secondary language
+
+logo_filename: logo.svg
+
+# Build settings
+markdown: kramdown

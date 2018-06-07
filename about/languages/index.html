@@ -1,0 +1,21 @@
+---
+layout: menupage
+title: "Languages"
+---
+
+<h1>{{ site.title }}</h1>
+
+<h2>{{page.title}}</h2>
+
+<div class="container">
+  <p>
+    The following languages are currently included in the scope of the {{ site.title }} project:
+
+    <ul class="about-ul">
+      <li><a href="{{ "/stories" | prepend: site.baseurl }}/{{ site.lang1_code }}/">{{ site.lang1 }}</a></li>
+      <li><a href="{{ "/stories" | prepend: site.baseurl }}/{{ site.lang2_code }}/">{{ site.lang2 }}</a></li>
+      <li><a href="{{ "/stories" | prepend: site.baseurl }}/fr/">French</a></li>
+    </ul>
+
+  </p>
+</div>

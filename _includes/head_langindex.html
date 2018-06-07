@@ -1,0 +1,19 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ "" | prepend: site.baseurl }}/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ "" | prepend: site.baseurl }}/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ "" | prepend: site.baseurl }}/favicon-16x16.png">
+	<link rel="manifest" href="{{ "" | prepend: site.baseurl }}/site.webmanifest">
+	<link rel="mask-icon" href="{{ "" | prepend: site.baseurl }}/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href={{ "" | prepend: site.baseurl }}/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<title>{{ site.title | escape }} - {{ page.langname }}</title>
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<link rel="stylesheet" href="{{ "/css" | prepend: site.baseurl }}/spectre.min.css">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ /feed.xml" | prepend: site.baseurl }}">
+	<script src="{{ "/js" | prepend: site.baseurl }}/sbc.js"></script>
+</head>
