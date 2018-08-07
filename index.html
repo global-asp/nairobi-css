@@ -4,7 +4,7 @@ language: {{ site.lang1_code }}
 ---
 <h1>{{ site.title }}</h1>
 
-<h4>{{ site.title }} is a framework for building responsive, mobile-friendly, multilingual literacy websites. This demo site has stories in {{ site.lang1 }} and {{ site.lang2 }}, as well as several other <a href="{{ "/about" | prepend: site.baseurl }}/languages">languages</a>. Enjoy!</h4>
+<h4>{{ site.title }} is a framework for building responsive, mobile-friendly, multilingual literacy websites. This demo site has stories in {{ site.lang1 }} and {{ site.lang2 }}, as well as several other <a href="{{ "/about" | prepend: site.baseurl }}/languages">languages</a>. Source code is available <a href="https://github.com/global-asp/nairobi-css">on GitHub</a>. Enjoy!</h4>
 
 <div class="container">
   <div class="columns">{% assign sorted_pages = site.pages | sort: "order" %}{% for page in sorted_pages %}{% if page.language == site.lang1_code and page.layout == "story" %}
