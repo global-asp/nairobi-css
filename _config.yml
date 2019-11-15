@@ -18,6 +18,8 @@ lang2: Spanish # Change this to the default secondary language of your site
 lang1_code: en # Change this to the ISO code for the primary language
 lang2_code: es # Change this to the ISO code for the secondary language
 
+no_audio_msg: "The audio for this story is currently not available."
+
 logo_filename: logo.svg
 
 # Build settings

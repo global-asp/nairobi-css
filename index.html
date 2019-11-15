@@ -7,30 +7,23 @@ language: {{ site.lang1_code }}
 <h4>{{ site.title }} is a framework for building responsive, mobile-friendly, multilingual literacy websites. This demo site has stories in {{ site.lang1 }} and {{ site.lang2 }}, as well as several other <a href="{{ "/about" | prepend: site.baseurl }}/languages">languages</a>. Source code is available <a href="https://github.com/global-asp/nairobi-css">on GitHub</a>. Enjoy!</h4>
 
 <div class="container">
-  <div class="columns">{% assign sorted_pages = site.pages | sort: "order" %}{% for page in sorted_pages %}{% if page.language == site.lang1_code and page.layout == "story" %}
-    <div class="column col-3 col-md-4 col-sm-6 col-xs-12">
-      <a class="btn-link" href="{{ "/stories" | prepend: site.baseurl }}/{{ site.lang1_code }}/{{ page.id }}/">
-        <div class="card">
-          <div class="card-image"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/{{ page.id }}/01.jpg"></div>
-          <div class="card-header">
-            <h3 class="card-title">{{page.title}}</h3></a>{% if page.level == "1" %}
-            <div class="bar">
-              <div class="bar-item tooltip" data-tooltip="Level 1" style="width:20%;"><a href="{{ "/stories" | prepend: site.baseurl }}/{{ site.lang1_code }}/level1" style="color:white">Level 1</a></div>
-            </div>{% endif %}{% if page.level == "2" %}
-            <div class="bar">
-              <div class="bar-item tooltip" data-tooltip="Level 2" style="width:40%;"><a href="{{ "/stories" | prepend: site.baseurl }}/{{ site.lang1_code }}/level2" style="color:white">Level 2</a></div>
-            </div>{% endif %}{% if page.level == "3" %}
-            <div class="bar">
-              <div class="bar-item tooltip" data-tooltip="Level 3" style="width:60%;"><a href="{{ "/stories" | prepend: site.baseurl }}/{{ site.lang1_code }}/level3" style="color:white">Level 3</a></div>
-            </div>{% endif %}{% if page.level == "4" %}
-            <div class="bar">
-              <div class="bar-item tooltip" data-tooltip="Level 4" style="width:80%;"><a href="{{ "/stories" | prepend: site.baseurl }}/{{ site.lang1_code }}/level4" style="color:white">Level 4</a></div>
-            </div>{% endif %}{% if page.level == "5" %}
-            <div class="bar">
-              <div class="bar-item tooltip" data-tooltip="Level 5" style="width:100%;"><a href="{{ "/stories" | prepend: site.baseurl }}/{{ site.lang1_code }}/level5" style="color:white">Level 5</a></div>
-            </div>{% endif %}
-          </div>
-        </div>
-    </div>{% endif %}{% endfor %}
-  </div>
+	<div class="columns">{% assign sorted_pages = site.pages | sort: "order" %}{% for page in sorted_pages %}{% if page.language == site.lang1_code and page.layout == "story" %}
+		<div class="column col-3 col-md-4 col-sm-6 col-xs-12">
+			<div class="card">
+				<div class="card-image">
+					<a class="btn-link" href="{{ "/stories" | prepend: site.baseurl }}/{{ site.lang1_code }}/{{ page.id }}/">
+						<img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/{{ page.id }}/01.jpg">
+					</a>
+				</div>
+				<div class="card-header">
+					<a class="btn-link" href="{{ "/stories" | prepend: site.baseurl }}/{{ site.lang1_code }}/{{ page.id }}/">
+						<h3 class="card-title">{{page.title}}</h3>
+					</a>
+					<div class="bar">
+						<a href="{{ "/stories" | prepend: site.baseurl }}/{{ page.language }}/level{{ page.level }}" class="bar-item tooltip" data-tooltip="Level {{ page.level }}" style="width:{{ page.level | times: 20 }}%;">Level {{ page.level }}</a>
+					</div>
+				</div>
+			</div>
+		</div>{% endif %}{% endfor %}
+	</div>
 </div>

@@ -14,21 +14,22 @@ version: "3"
 nc: ""
 source: "10547"
 asptitle: "I like to read"
-l1title: "¡Me gusta leer!"
-l2title: "I like to read!"
+l1title: "I like to read!"
+l2title: "¡Me gusta leer!"
 shortcode: "read"
 order: "01"
+audio_available: "true"
 ---
 
 {% include storycover.html %}
 <div id="text02" class="columns">
 	{% include picturecol.html index="02" %}	{% include textcol_start.html %}	Me gusta leer.
 	{% include textcol_end.html %}
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
-	Me gusta leer.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l1"><h3>
 	I like to read.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l2"><h3>
+	Me gusta leer.
 	</h3></div>
 	{% include audiocontrols.html index="02" prev="01" next="03" %}
 </div>
@@ -37,11 +38,11 @@ order: "01"
 <div id="text03" class="columns">
 	{% include picturecol.html index="03" %}	{% include textcol_start.html %}	¿Para quién puedo leer?
 	{% include textcol_end.html %}
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
-	¿Para quién puedo leer?
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l1"><h3>
 	Who can I read to?
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l2"><h3>
+	¿Para quién puedo leer?
 	</h3></div>
 	{% include audiocontrols.html index="03" prev="02" next="04" %}
 </div>
@@ -50,11 +51,11 @@ order: "01"
 <div id="text04" class="columns">
 	{% include picturecol.html index="04" %}	{% include textcol_start.html %}	Mi hermana está durmiendo.
 	{% include textcol_end.html %}
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
-	Mi hermana está durmiendo.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l1"><h3>
 	My sister is asleep.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l2"><h3>
+	Mi hermana está durmiendo.
 	</h3></div>
 	{% include audiocontrols.html index="04" prev="03" next="05" %}
 </div>
@@ -63,11 +64,11 @@ order: "01"
 <div id="text05" class="columns">
 	{% include picturecol.html index="05" %}	{% include textcol_start.html %}	¿Para quién puedo leer?
 	{% include textcol_end.html %}
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
-	¿Para quién puedo leer?
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l1"><h3>
 	Who can I read to?
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l2"><h3>
+	¿Para quién puedo leer?
 	</h3></div>
 	{% include audiocontrols.html index="05" prev="04" next="06" %}
 </div>
@@ -76,12 +77,12 @@ order: "01"
 <div id="text06" class="columns">
 	{% include picturecol.html index="06" %}	{% include textcol_start.html %}	Mi madre y mi abuela están ocupadas.
 	{% include textcol_end.html %}
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
-	Mi madre y mi abuela están ocupadas.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l1"><h3>
 	My mother and
 grandmother are busy.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l2"><h3>
+	Mi madre y mi abuela están ocupadas.
 	</h3></div>
 	{% include audiocontrols.html index="06" prev="05" next="07" %}
 </div>
@@ -90,11 +91,11 @@ grandmother are busy.
 <div id="text07" class="columns">
 	{% include picturecol.html index="07" %}	{% include textcol_start.html %}	¿Para quién puedo leer?
 	{% include textcol_end.html %}
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
-	¿Para quién puedo leer?
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l1"><h3>
 	Who can I read to?
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l2"><h3>
+	¿Para quién puedo leer?
 	</h3></div>
 	{% include audiocontrols.html index="07" prev="06" next="08" %}
 </div>
@@ -103,12 +104,12 @@ grandmother are busy.
 <div id="text08" class="columns">
 	{% include picturecol.html index="08" %}	{% include textcol_start.html %}	Mi padre y mi abuelo están ocupados.
 	{% include textcol_end.html %}
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
-	Mi padre y mi abuelo están ocupados.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l1"><h3>
 	My father and
 grandfather are busy.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l2"><h3>
+	Mi padre y mi abuelo están ocupados.
 	</h3></div>
 	{% include audiocontrols.html index="08" prev="07" next="09" %}
 </div>
@@ -117,12 +118,12 @@ grandfather are busy.
 <div id="text09" class="columns">
 	{% include picturecol.html index="09" %}	{% include textcol_start.html %}	¿Para quién puedo leer? ¡Puedo leer para mí mismo!
 	{% include textcol_end.html %}
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
-	¿Para quién puedo leer? ¡Puedo leer para mí mismo!
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l1"><h3>
 	Who can I read to? I can
 read to myself!
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level{{ page.level }}-txt l2"><h3>
+	¿Para quién puedo leer? ¡Puedo leer para mí mismo!
 	</h3></div>
 	{% include audiocontrols_colophon.html index="09" prev="08" next="colophon" %}
 </div>

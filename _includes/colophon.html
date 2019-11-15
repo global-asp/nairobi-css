@@ -6,9 +6,9 @@
 		<h5>Read by: {{page.reader}}</h5>{% endif %}
 		<h5>Language: <a href="{{ "/stories" | prepend: site.baseurl }}/{{page.language}}">{{page.langname}}</a></h5>
 		<h5><a href="{{ "/stories" | prepend: site.baseurl }}/{{page.language}}/level{{page.level}}">Level {{page.level}}</a></h5>
-		<h5>Source: <a href="http://africanstorybook.org/reader.php?id={{page.source}}" target="_blank">{{page.asptitle}}</a> from <a href="http://africanstorybook.org/">African Storybook</a></h5>
+		<h5>Source: <a href="https://africanstorybook.org/reader.php?id={{page.source}}" target="_blank">{{page.asptitle}}</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
-		<left><a rel="license" href="http://creativecommons.org/licenses/{{page.license}}/{{page.version}}.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/{{page.license}}/{{page.version}}.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/{{page.license}}/{{page.version}}.0/">Creative Commons Attribution{{page.nc}} {{page.version}}.0 International License</a>.</left>
+		<div><a rel="license" href="https://creativecommons.org/licenses/{{page.license}}/{{page.version}}.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/{{page.license}}/{{page.version}}.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/{{page.license}}/{{page.version}}.0/">Creative Commons Attribution{{page.nc}} {{page.version}}.0 International License</a>.</div>
 
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
@@ -18,6 +18,6 @@
 </div>
 <div>
 <h5>Options</h5>
-	<a class="btn btn-lg" href="{{ "/stories" | prepend: site.baseurl }}/{{page.language}}" class="button">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
+	<a class="btn btn-lg" href="{{ "/stories" | prepend: site.baseurl }}/{{page.language}}">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
 <br><br>
 </div>
